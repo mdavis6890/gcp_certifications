@@ -1,0 +1,189 @@
+20,Area Under the Curve (AUC),"""Area under the ROC Curve."" That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).",https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc,
+131,FTRL Optimization,"""Follow the regularized leader"", works well on wide models. Good for DNN and linear models.",,
+156,Multiclass Neural Network,A classification neural network with output neurons that correspond to each possible class.,,
+37,neural networks,"A collection of nodes that roughly work as brain neurons do, taking inputs, running a calculation, then passing the result to subsequent neurons, until a final prediction is reached",,
+101,Feature Column,"A column that contains data that your model will use when making its predictions. In TensorFlow, a bridge between the raw data and the model Estimator.",https://medium.com/ml-book/demonstration-of-tensorflow-feature-columns-tf-feature-column-3bfcca4ca5c4,
+52,Confusion Matrix,A confusion matrix is a square matrix that shows predictions compared to labels after a training session. The same set of possible predictions/labels is shown both horizontally and vertically in the same order. One dimension represents predictions and the other labels Correct predications are along the main diagonal.,,
+45,Convolutional Neural Network (CNN),"A Convolutional Neural Network is a deep learning network that includes ""convolutions"" suited to recognizing higher-level features in an image.",,
+107,Vertex Data Labeling,A data labeling service,,
+50,Google Facets,A data visualization tool used in ML,https://pair-code.github.io/facets/,
+54,Decision Trees,A Decion Tree organizes features into a tree of successive comparisons that progressively refine the prediction,,
+10,Dense Neural Network (DNN),A dense neural network is a deep neural network in which all the neurons are connect to all of the neurons in neighbording layers.,,
+151,Softmax,"A function applied to the outputs of a neural network to constain them to a probability distribution - where all the outputs sum to 1. Computationally intensive for large numbers of classes, so approximations are used like Candidate Sampling or Noise Contrastive Estimation instead.",,
+12,loss function,"A function who's value the a training algorithm will try to minimize. Usually some measure of the difference between predicted values and actual values, along with regularization terms.",,
+28,Integrated gradients,"A gradients-based method to efficiently compute feature attributions with the same axiomatic properties as the Shapley value.
+Recommended for:
+- Differentiable models, such as neural networks.
+- Models with large feature spaces.
+- Low-contrast images, such as X-rays.
+- Classification and regression on tabular data
+- Classification on image data",,
+105,Vertex Notebooks,A managed Jupyter Notebooks platform,,
+76,Classification,"A model which predicts a particular class from a set of possible classes, based on some number of input values.",,
+83,Perceptron,A perceptron is a single-layer neural network.,https://towardsdatascience.com/what-the-hell-is-perceptron-626217814f53,
+90,Support Vector Machines,A support vector machine (SVM) searches for the hyperplane that creates the largest gap - margin - to the data points on each side.,https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47,
+72,Dataframe,A table-like strucure in Pandas,,
+100,SparseTensor,A tensor type that is stored as a dictionary that contains only those values that are non-zero. Much more efficient when the tensor is expected to contain mostly zeros.,,
+99,RaggedTensor,A Tensor type that suppors different lengths of items in the same axis.,,
+104,Vertex AutoML,A tool for having models created automatically for you without needing to write any code or perform hyperparameter tuning.,,
+121,Max-Norm Regularization,A weight constraint that clips the weight at some maximum.,,
+64,Data Quality Attributes,"Accuracy, Consistency, Timeliness, Completeness",,
+135,L0 Regularization,"Adding a term to the loss function that is simply the count of the non-zero weights in the model, which helps to reduce the number of features in the model. Not commonly used as it is non-convex and NP hard.",,
+119,L1 Regularization,"Adds the sum of all the weights (times a scaler) to the loss function, penalizing models with more non-zero weights. Results in a model that is more sparse, meaning that some of the weights will go to zero.",,
+120,L2 Regularization,"Adds the sum of the squares of all the weights (times a constant) to the loss function, penalizing models with a few very large weights. Simplifies the model and improves generalization by keeping the overall weights lower, and substantially penalizing large-value outliers.",,
+27,AI Explanations,"AI Explanations integrates feature attributions into AI Platform Prediction. AI Explanations helps you understand your model's outputs for classification and regression tasks. Whenever you request a prediction on AI Platform, AI Explanations tells you how much each feature in the data contributed to the predicted result.","Docs
+Whitepaper",
+134,AI Platform Vizier Vizier,AI Platform Vizier is a black-box optimization service that helps you tune hyperparameters in complex machine learning (ML) models.,,
+154,Parameter Sweep,"AKA. Hyper-Parameter Optimization, searching among the model parameters to find the best ones for training.",,
+138,Leaky ReLU,"An activation function like ReLU, but instead of zero when the input (x) is negative, uses .01x instead to prevent die-out.",,
+137,Softplus,"An activation function that very closely replicates ReLU, but is continuous and non-zero everywhere so doesn't die-out like ReLU can. But requires lot of computation and doesn't improve much over ReLU, so not used often.",,
+145,Non-saturating Activation Function,"An activation function who's output can go to infinity, such as ReLU",,
+152,Softmax - Candidate Sampling,"An approximation of softmax that calculates for all the positive labels, but only a random sample of negatives, to speed computation. Intuitive, doesn't require very good model.",,
+24,ARIMA model type,An ARIMA model is a class of statistical models for analyzing and forecasting time series data.,https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/,
+163,tf.Example,An Example is a mostly-normalized data format for storing data for training and inference. It contains a key-value store features where each key (string) maps to a tf.train.Feature message.,https://www.tensorflow.org/api_docs/python/tf/train/Example,
+86,ROC,"An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds. This curve plots two parameters:
+
+True Positive Rate
+False Positive Rate",https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc,
+164,Layer Sharing,Another good use for the functional API are models that use shared layers. Shared layers are layer instances that are reused multiple times in the same model -- they learn features that correspond to multiple paths in the graph-of-layers.,https://keras.io/guides/functional_api/,
+148,How can you solve exploding gradients?,"Any or all of these may help:
+Lowing the learning rate
+Weight regularization
+Graident Clipping
+Batch Normalization",,
+153,Softmax - Noise-contrastive Estimation,Approximates the denominator of softmax by modeling the distribution of outputs. Requires a very good model.,,
+79,Embedding,"Assigning coordinates to an item in an arbitrary, n-dimensional, coordinate space, such that ""similar"" items are near each other according to some meaningful definittion of similar. Often used in recommendations.",,
+106,Vertex Pipelines,"Automate, monitor, and govern your ML systems by orchestrating your ML workflow in a serverless manner, and storing your workflow's artifacts using Vertex ML Metadata.",,
+23,Avro format,Avro is a data file format that stores the data definition in JSON format and the data itself in binary format.,https://www.ibm.com/analytics/hadoop/avro,
+55,Bagging,"Bagging (Bootstrap Aggregation) is used when our goal is to reduce the variance of a decision tree. Here idea is to create several subsets of data from training sample chosen randomly with replacement. Now, each collection of subset data is used to train their decision trees. As a result, we end up with an ensemble of different models. Average of all the predictions from different trees are used which is more robust than a single decision tree.",https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd9,
+142,Batch Normalization,Batch normalization is a technique for training very deep neural networks that standardizes the inputs to a layer for each mini-batch. This has the effect of stabilizing the learning process and dramatically reducing the number of training epochs required to train deep networks.,,
+57,Boosting,"Boosting is an ensemble method for improving the model predictions of any given learning algorithm. The idea of boosting is to train weak learners sequentially, each trying to correct its predecessor.",https://medium.com/greyatom/a-quick-guide-to-boosting-in-ml-acf7c1585cb5,
+126,Stochastic Gradient Decent,Calculate derivitive and update weights for each item in the training set.,,
+59,TensorFlow distributed training strategy - CentralStorageStrategy,"CentralStorageStrategy does synchronous training as well. Variables are not mirrored, instead they are placed on the CPU and operations are replicated across all local GPUs. If there is only one GPU, all variables and operations will be placed on that GPU.",https://www.tensorflow.org/guide/distributed_training,
+77,Clustering,Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group are more similar to each other than to those in other groups.,,
+136,Elastic Net,Combination of L1 and L2 regularization,,
+36,ensembles of trees,Combines several decision trees to produce better predictive performance than utilizing a single decision tree.,,
+69,Cosine Similarity,"Cosine similarity is a metric used to measure the similarity of two text documents, irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space.",https://www.machinelearningplus.com/nlp/cosine-similarity/,
+143,Covariate Shift,Covariate shift refers to the change in the distribution of the input variables present in the training and the production input data.,,
+122,Dataset Augmentation,"Creating and using synthetic data based on original, real data, in order to expand the amount of training data available. With images, for example, by rotating, scaling, or cropping them, or adding noise.",https://algorithmia.com/blog/introduction-to-dataset-augmentation-and-expansion,
+78,Cross Entropy or Log Loss,Cross-entropy (also known as Log Loss) is commonly used in machine learning as a loss function for classification models with an output between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label.,https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html,
+5,Cross validation,"Cross-validation (often called k-fold cross-validation) is a resampling procedure used to evaluate ML models on a limited data sample.
+The data is divided into k folds. Then training is performed using the whole training dataset, validating against one of the folds. Then training is repeated again with the whole dataset, this time using a different fold for validation.
+It's important to still hold out a final test dataset.",,
+63,What are the major steps in Machine Learning?,"Data Extraction, Analysis, Preparation
+Model Training, Evaluation, Validation
+Model Serving
+Monitoring",,
+67,Bivariate data,Data that depends on two variables,,
+9,Davies-Bouldin index,Davies-Bouldin Index is one way to determine the optimal number of clusters when using k-means clustering. Others include Silhouette Analysis and the Elbow method,https://gdcoder.com/silhouette-analysis-vs-elbow-method-vs-davies-bouldin-index-selecting-the-optimal-number-of-clusters-for-kmeans-clustering/,
+46,Deep Neural Networks,"Deep learning uses multiple layers of nodes or ""neurons"" as part of a neural network. A ""deep neural network""",,
+68,Deep Learning,"Deep learning uses multiple layers of nodes or ""neurons"" as part of a neural network. A ""deep neural network""",,
+6,DELETE,DELETE,DELETE,DELETE
+22,DELETE,DELETE,DELETE,DELETE
+62,DELETE,DELETE,,DELETE
+65,DELETE,DELETE,,DELETE
+93,Dropout,DELETE,DELETE,DELETE
+95,Epoch,DELETE,,DELETE
+150,Drop-out,"Drop-out randomly chooses neurons to be set to Zero output for that forward pass, as though they didn't exist. Typical drop-out ranges from 20-50%",,
+144,Exploding gradients,Exploding gradients are a problem where large error gradients accumulate and result in very large updates to neural network model weights during training.,https://machinelearningmastery.com/exploding-gradients-in-neural-networks/,
+42,Feature Engineering,"Feature engineering is the process of using domain knowledge to extract features (characteristics, properties, attributes) from raw data.",,
+51,Feature,Features are the set of independent input variables that are the basis for making a prediction,,
+155,Min-Max Normalization,"For each feature, scales it to a number between 0 and 1",https://www.codecademy.com/articles/normalization,
+103,Vertex Prediction,"GCP Model hosting and prediction service. Supports TensorFlow, scikit-learn and XGBoost.",,
+102,Vertex Training,"GCP Model Training Service. Supports TensorFlow, scikit-learn and XGBoost and custom containers",,
+146,Gradient Clipping,"Gradient clipping is a technique to prevent exploding gradients in very deep networks, usually in recurrent neural networks. pre-determined gradient threshold be introduced, and  then gradients norms that exceed this threshold are scaled down to match",https://deepai.org/machine-learning-glossary-and-terms/gradient-clipping,
+130,Adam Optimization,Gradient Decent Optimization - AdaGrad with fixes. Good for DNN and linear models,,
+128,AdaGrad,Gradient Decent Optimization - Give frequently occurring features low learning rates,,
+129,AdaDelta,Gradient Decent Optimization - Improves AdaGrad by avoiding reducing the learning rate to zero.,,
+96,Hunt’s algorithm,Greedy algorithm for learning decision trees,https://towardsdatascience.com/what-is-a-decision-tree-22975f00f3e1,
+82,Hyperparameters,Hyperparameters are higher-level properties of a model such as how fast it can learn (learning rate) or complexity of a model. The depth of trees in a Decision Tree or number of hidden layers in a Neural Networks are examples of hyper parameters.,,
+34,Differentiable models,"In differentiable models, you can calculate the derivative of all the operations in your TensorFlow graph. This property helps to make backpropagation possible in such models. For example, neural networks are differentiable.",,
+132,Batch size,"In gradient decent, how many examples to predict before calculating the gradient and updating the model. This done for each batch.",,
+53,Ensemble Learning,"In statistics and machine learning, ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.",,
+43,Target Leakage,"In statistics and machine learning, leakage (also known as data leakage or target leakage) is the use of information in the model training process which would not be expected to be available at prediction time, causing the predictive scores (metrics) to overestimate the model's utility when run in a production environment.",https://en.wikipedia.org/wiki/Leakage_(machine_learning),
+8,K-means clustering,"K-Means clustering is an unsupervised machine learning algorythim that attemps to group data together such that items in the same group are more similar to each other than to others in different groups. ""k"" is the number of groups",,
+98,Keras,Keras is a higher-level deep learning framework that runs on TensorFlow,,
+87,Kernel Density Estimation (KDE),"Kernel density estimation(KDE), is a technique that let’s you create a smooth curve given a set of data, or create new synthetic data that appears to come from the original dataset.",https://mathisonian.github.io/kde/,
+19,Kubeflow pipeline,Kubeflow Pipelines is a platform for building and deploying ML workflows based on Kubernetes,https://www.kubeflow.org/docs/components/pipelines/overview/pipelines-overview/,
+165,Latent Dirichlet Allocation (LDA),LDA is used in Topic Modeling to determine the topics that a given text document belongs to.,https://towardsdatascience.com/latent-dirichlet-allocation-lda-9d1cd064ffa2,
+81,Learning Rate,"Learning rate is a constant multiplier to the step size during gradient decent. A larger learning rate means that larger adjustments will be made to the model through the training process, which may allow the model to converge more quickly, but can also cause it to diverge instead.",,
+139,PReLU,"Like Leaky ReLU, but instead of .01x when x is negative, uses a trainable parameter instead.",,
+140,ReLU6,"Like ReLU, but capped at 6 for the output.",,
+141,ELU,"Like ReLU, but uses an exponential when x <= 0",,
+125,Lasso Regression,Linear regression with L1 regularization,,
+124,Ridge Regression,Linear regression with L2 regularization,,
+80,Logistic Regression,"Logistic regression is a classification algorithm used to assign observations to a discrete set of classes. Unlike linear regression which outputs continuous number values, logistic regression transforms its output using the logistic sigmoid function to return a probability value which can then be mapped to two or more discrete classes.",https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html,
+117,Matrix factorization,Matrix factorization is a simple embedding model used to generate latent features when multiplying two different kinds of entities.,https://developers.google.com/machine-learning/recommendation/collaborative/matrix,
+97,Gini impurity,"Metric used in learning decision trees. Measures how often a randomly chosen element is labeled incorrectly if it was randomly labeled according to distribution. Like a loss function, training will try to minimize the Gini impurity",https://towardsdatascience.com/what-is-a-decision-tree-22975f00f3e1,
+16,TensorFlow distributed training strategy - MirroredStrategy,"MirroredStrategy supports synchronous distributed training on multiple GPUs on one machine. It creates one replica per GPU device. Each variable in the model is mirrored across all the replicas. Together, these variables form a single conceptual variable called MirroredVariable. These variables are kept in sync with each other by applying identical updates.",https://www.tensorflow.org/guide/distributed_training,
+157,Seldon Deploy,Model deployment framework on Kubernetes,,
+88,Mean Squared Error (MSE),MSE measures the error of a set of predictions from the correct values. Often used as a loss function in linear regression.,,
+17,TensorFlow distributed training strategy - MultiWorkerMirroredStrategy,"MultiWorkerMirroredStrategy is very similar to MirroredStrategy. It implements synchronous distributed training across multiple workers, each with potentially multiple GPUs. Similar to MirroredStrategy, it creates copies of all variables in the model on each device across all workers.",https://www.tensorflow.org/guide/distributed_training,
+35,Non-differentiable models,"Non-differentiable models include non-differentiable operations in the TensorFlow graph, such as operations that perform decoding and rounding tasks. For example, a model built as an ensemble of trees and neural networks is non-differentiable. To get feature attributions for non-differentiable models, use the sampled Shapley method.",,
+4,Recall,"Of all the true positives, what percentage were correctly predicted as positive?",,
+133,Epoch,"One pass through the whole training set, often comprised of multiple batches with the model being updated after each batch.",,
+61,TensorFlow distributed training strategy - OneDeviceStrategy,"OneDeviceStrategy is a strategy to place all variables and computation on a single specified device. This strategy is distinct from the Default Strategy in a number of ways. In the Default Strategy, the variable placement logic remains unchanged when compared to running TensorFlow without any distribution strategy. But when using OneDeviceStrategy, all variables created in its scope are explicitly placed on the specified device. Moreover, any functions called via OneDeviceStrategy.run will also be placed on the specified device.",https://www.tensorflow.org/guide/distributed_training,
+85,Seldon Core,Open-source platform for rapidly deploying machine learning models on Kubernetes,,
+158,Seldon Alibi,Open-source Python library for ML model inspection and interpretation.,,
+71,Pandas,"pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language.",https://pandas.pydata.org/,
+58,TensorFlow distributed training strategy - ParameterServerStrategy,Parameter server training is a common data-parallel method to scale up model training on multiple machines. A parameter server training cluster consists of workers and parameter servers. Variables are created on parameter servers and they are read and updated by workers in each step.,https://www.tensorflow.org/guide/distributed_training,
+7,PCA (Principal Component Analysis),"Principal Component Analysis, or PCA, is a dimensionality-reduction method that is often used to reduce the dimensionality of large data sets, by transforming a large set of variables into a smaller one that still contains most of the information in the large set.",,
+56,Random Forest,"Random Forest is an extension over bagging. It takes one extra step where in addition to taking the random subset of data, it also takes the random selection of features rather than using all features to grow trees. When you have many random trees. It’s called Random Forest ",https://towardsdatascience.com/decision-tree-ensembles-bagging-and-boosting-266a8ba60fd10,
+84,ReLU,"Rectified Linear Unit (ReLU) is an activation function used in deep learning that returns the input value if positive, zero otherwise.",,
+47,Recurrent Neural Networks,"Recurrent Neural Networks are designed to process an arbitrarily long sequence of inputs by operating on them one at a time, but keeping some hidden state so that future outputs are influenced by previous inputs.",https://towardsdatascience.com/recurrent-neural-networks-d4642c9bc7ce,
+127,Momentum Optimzation,Reduces learning rate when gradient values are small.,,
+11,regularization,Regularization is an adjustment to the cost function that attempt to make the model more generalized at the expense of worse predictions on the training data.,,
+166,Reinforcement Learning,Reinforcement Learning(RL) is a type of machine learning technique that enables an agent to learn in an interactive environment by trial and error using feedback from its own actions and experiences.,https://www.kdnuggets.com/2018/03/5-things-reinforcement-learning.html,
+167,Residual Connection,"Residual connections, or ""skip connections,"" are used to allow gradients to flow through a network directly, without passing through non-linear activation functions.",,
+30,Sampled Shapley,"Sampled Shapley is a feature attribution method used for non-differentiable models that predict on tabular data.
+Assigns credit for the outcome to each feature, and considers different permutations of the features. This method provides a sampling approximation of exact Shapley values.
+
+Recommended for:
+- Non-differentiable models, such as ensembles of trees and neural networks
+- Classification and regression on tabular data",,
+70,Seaborn,Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.,https://seaborn.pydata.org/,
+38,Shapley values,Shapley values are used for interpretability and tell you how much a given feature contributes to a prediction.,,
+168,Tensorflow Data Validation,"TensorFlow Data Validation identifies anomalies in training and serving data, and can automatically create a schema by examining the data. ",https://www.tensorflow.org/tfx/data_validation/get_started,
+14,TensorFlow Inception,TensorFlow Inception is a deep convolutional network for computer vision.,https://medium.com/initialized-capital/we-need-to-go-deeper-a-practical-guide-to-tensorflow-and-inception-50e66281804f,
+3,Label,"The ""true answer"" that correctly identifies the attribute that you would like to predict with your model",,
+60,TensorFlow distributed training strategy - Default,"The Default Strategy is a distribution strategy which is present when no explicit distribution strategy is in scope. It implements the tf.distribute.Strategy interface but is a pass-through and provides no actual distribution. For instance, strategy.run(fn) will simply call fn. Code written using this strategy should behave exactly as code written without any strategy. You can think of it as a ""no-op"" strategy.",https://www.tensorflow.org/guide/distributed_training,
+94,Gradient Decent,"The process of making predictions, determining the gradient of the loss function, and updating the weights in the model opposite the direction of the gradient.",,
+161,Logits,"The raw, unnormalized outputs of a model, usually passed through a normalization function",,
+169,TFRecord,The TFRecord format is a simple format for storing a sequence of binary records.,https://www.tensorflow.org/tutorials/load_data/tfrecord,
+18,TensorFlow distributed training - Synchronous vs asynchronous,"These are two common ways of distributing training with data parallelism. In sync training, all workers train over different slices of input data in sync, and aggregating gradients at each step. In async training, all workers are independently training over the input data and updating variables asynchronously. Typically sync training is supported via all-reduce and async through parameter server architecture.",https://www.tensorflow.org/guide/distributed_training,
+15,TensorFlow distributed training strategy - TPUStrategy,"TPUStrategy lets you run your TensorFlow training on Tensor Processing Units (TPUs). In terms of distributed training architecture, TPUStrategy is the same MirroredStrategy—it implements synchronous distributed training.",https://www.tensorflow.org/guide/distributed_training,
+40,Testing for Algorithmic Correctness,"Train your model for a few iterations and verify that the loss decreases.
+
+Train your algorithm without regularization. If your model is complex enough, it will memorize the training data and your training loss will be close to 0.
+
+Test specific subcomputations of your algorithm. For example, you can test that a part of your RNN runs once per element of the input data.",https://developers.google.com/machine-learning/testing-debugging/pipeline/deploying#testing-for-algorithmic-correctness,
+75,Regression,Training a model to predict a continuous value based on any number of input variables.,,
+73,Supervised Learning,Training a model with labeled examples.,,
+41,Training-serving Skew,"Training-serving skew is a difference between performance during training and performance during serving. This skew can be caused by:
+
+A discrepancy between how you handle data in the training and serving pipelines.
+A change in the data between when you train and when you serve.
+A feedback loop between your model and your algorithm.",https://developers.google.com/machine-learning/guides/rules-of-ml#training-serving_skew,
+149,How can you solve dying ReLU layers?,Try lowering your learning rate or using a ReLU variation instead.,,
+147,How can you solve vanishing gradients?,"Try using a non-saturating activation function like ReLU, rather than a saturating one like sigmoid or tanh",,
+74,Unsupervised Learning,"Unsupervised learning is where you allow the model to discover patterns and insights on it's own, without using labeled examples",,
+66,One-Hot Encoding,"Use a vector with a dimension for each possible categorical value. Set 1 to the dimension for the labeled category, and 0 for all others.
+e.g.:
+[0,0,0,0,1,0,0]",,
+91,Kernel Transformation,"Used in Support Vector Machines (SVM) to map inputs to a higher dimensional vector space, where the features can be linearly separated",,
+162,Kernelization,"Used in SVM, a kernelization is a technique for designing efficient algorithms that achieve their efficiency by a preprocessing stage in which inputs to the algorithm are replaced by a smaller input, called a ""kernel"".",https://en.wikipedia.org/wiki/Kernelization,
+170,Semi-supervised learning,"Using a combination of a small number of unlabeled examples, many unlabeled examples and adversarial training.",https://medium.com/inside-machine-learning/placeholder-3557ebb3d470,
+159,Vertex ML Metadata,"Vertex ML Metadata lets you record the metadata and artifacts produced by your ML system and query that metadata to help analyze, debug, and audit the performance of your ML system or the artifacts that it produces.",,
+118,Vertex TensorBoard,"Vertex TensorBoard is an enterprise ready, managed version of TensorBoard",,
+26,Intents (context: Virtual Agents),What the end-user is trying to do.,,
+49,Recall,"With a classification model, how often a label is correctly predicated by the model. For a picture of a rose, how often is it predicted to be a rose?",https://medium.com/data-science-in-your-pocket/calculating-precision-recall-for-multi-class-classification-9055931ee229,
+48,Precision,"With a classification model, how often a predicted label matchs the true value. When the model predicts a rose, how often is it actually a rose?",https://medium.com/data-science-in-your-pocket/calculating-precision-recall-for-multi-class-classification-9055931ee229,
+92,Gaussian RBF Kernel,"With Support Vector Machines, RBF kernels are the most generalized form of kernelization and is one of the most widely used kernels due to its similarity to the Gaussian distribution. The RBF kernel function for two points X₁ and X₂ computes the similarity or how close they are to each other.",https://towardsdatascience.com/radial-basis-function-rbf-kernel-the-go-to-kernel-acf0d22c798a,
+160,XGBoost,"XGBoost is an optimized distributed gradient boosting library, using gradient boosted trees",,
+29,XRAI (eXplanation with Ranked Area Integrals),"XRAI is a feature attribution method in image classification.
+Based on the integrated gradients method, XRAI assesses overlapping regions of the image to create a saliency map, which highlights relevant regions of the image rather than pixels.
+Recommended for:
+- Models that accept image inputs.
+- Natural images
+- Classification on image data",,
